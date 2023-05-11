@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: 10px solid #000;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #fff;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+.between {
+  font-size: 1.2rem;
+}
+.btn {
+  background-color: #fff;
+  padding: 0.6rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #eaeaea;
+}
+.again {
+  margin-bottom: 1rem;
+}
+
+.number {
+  border: 10px solid #ffffff;
+  padding: 1rem 1.5rem;
+  margin: 1.4rem;
+  font-size: 5rem;
+  font-weight: 500;
+  background-color: #000;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-right: 5px solid #ffffff;
+}
+.guess {
+  height: 8rem;
+  width: 8rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.check {
+  width: 8rem;
+  margin-top: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 1.5rem;
+}
+.chance {
+  font-size: 2.5rem;
+}
