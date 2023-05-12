@@ -10,6 +10,7 @@ const displayMessage = function (message) {
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
 
+  // if input is null
   if (!guess) {
     displayMessage("No number!");
   } else if (guess === computerNumber) {
@@ -31,6 +32,9 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".chance").textContent = chance;
     } else {
       displayMessage("You lost the game!");
+      document.querySelector(".number").textContent = computerNumber;
+      document.querySelector(".between").textContent =
+        "The correct number is: ";
       document.querySelector(".chance").textContent = 0;
       document.querySelector("body").style.backgroundColor = "red";
     }
@@ -44,5 +48,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".chance").textContent = 20;
   document.querySelector(".guess").value = "";
   displayMessage("Start guessing... You will have 20 guesses");
-  document.querySelector("body").style.backgroundColor = "#3a3a3a";
+  document.querySelector("body").style.backgroundColor = "#250a3f";
 });
