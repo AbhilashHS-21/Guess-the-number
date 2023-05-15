@@ -47,6 +47,6 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".chance").textContent = 20;
   document.querySelector(".guess").value = "";
-  displayMessage("Start guessing... You will have 20 guesses");
+  displayMessage("Start guessing...");
   document.querySelector("body").style.backgroundColor = "#250a3f";
 });
